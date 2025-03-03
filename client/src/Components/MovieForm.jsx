@@ -7,7 +7,7 @@ export default function NewMovieForm() {
     async function handleSubmit(event) {
         event.preventDefault()
         try {
-            const result = await fetch(`https://week-7-project-2.onrender.com/movies`, {
+            const result = await fetch(`https://week-7-project-2.onrender.com/movie`, {
                 method: "POST", 
                 headers: {
                     "Content-Type": "application/json"
