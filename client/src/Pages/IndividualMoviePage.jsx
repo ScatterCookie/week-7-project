@@ -8,7 +8,7 @@ export default function IndividualMoviePage() {
 
     useEffect(() => {
         async function fetchMovie(){
-            const res = await fetch(`http://localhost:8080/movie/${id}?includes_genres=true`)
+            const res = await fetch(`https://week-7-project-2.onrender.com/movie/${id}?includes_genres=true`)
             const data = await res.json()
             console.log(data.genres.length)
             setMovieInfo(data)

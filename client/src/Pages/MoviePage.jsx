@@ -7,7 +7,7 @@ export default function MoviesPage() {
 
     async function handleDelete(id) {
         try {
-            const result = await fetch(`http://localhost:8080/movie/${id}`, {
+            const result = await fetch(`https://week-7-project-2.onrender.com/movie/${id}`, {
                 method: "DELETE", 
             })
             const message = await result.json()
@@ -22,7 +22,7 @@ export default function MoviesPage() {
 
     useEffect(() => {
         async function fetchData() {
-            const res = await fetch(`http://localhost:8080/movies`)
+            const res = await fetch(`https://week-7-project-2.onrender.com/movies`)
             const data = await res.json()
             setMovies(data)
         }
