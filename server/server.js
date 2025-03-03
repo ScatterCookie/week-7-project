@@ -74,7 +74,7 @@ app.post('/movies', async (req, res) => {
     }
 })
 
-app.delete('/movies/:id', async (req, res)=> {
+app.delete('/movie/:id', async (req, res)=> {
     try 
     {
         const deleteMovie = (await db.query('DELETE FROM movies WHERE id = $1 RETURNING *', [req.params.id]))
