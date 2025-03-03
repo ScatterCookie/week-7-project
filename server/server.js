@@ -61,7 +61,7 @@ app.get('/movie/:id', async (req, res) => {
     }
 })
 
-app.post('/movie', async (req, res) => {
+app.post('/movies', async (req, res) => {
     const {title} = req.body;
     try
     {
